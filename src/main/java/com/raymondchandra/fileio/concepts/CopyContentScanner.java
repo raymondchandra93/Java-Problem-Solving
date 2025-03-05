@@ -1,4 +1,4 @@
-package com.raymondchandra.fileioconcepts;
+package com.raymondchandra.fileio.concepts;
 
 import java.io.FileReader;
 import java.io.FileWriter;

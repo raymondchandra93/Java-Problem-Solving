@@ -10,7 +10,7 @@ Insertion/Deletion 		Slower for deleting a node (need to find the previous node)
 Use Cases				Simple applications like stacks, queues
  */
 
-package com.raymondchandra.linkedlistconcepts;
+package com.raymondchandra.linkedlist.concepts;
 
 public class SingleLinkedList {
 	static class Node {

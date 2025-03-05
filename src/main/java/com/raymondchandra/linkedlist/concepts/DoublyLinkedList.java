@@ -10,7 +10,7 @@ Insertion/Deletion	Faster for deletion (direct access to previous node)
 Use Cases			More efficient for complex operations like undo-redo, navigation
  */
 
-package com.raymondchandra.linkedlistconcepts;
+package com.raymondchandra.linkedlist.concepts;
 
 public class DoublyLinkedList {
 	static class Node {

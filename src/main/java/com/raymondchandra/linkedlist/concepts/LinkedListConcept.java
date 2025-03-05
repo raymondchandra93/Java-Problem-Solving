@@ -6,7 +6,7 @@
 	- Higher Memory Usage: 				Since each node has an extra reference (prev), it uses more memory than a singly linked list.
  */
 
-package com.raymondchandra.linkedlistconcepts;
+package com.raymondchandra.linkedlist.concepts;
 
 import java.util.LinkedList;
 

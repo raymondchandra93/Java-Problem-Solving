@@ -1,28 +1,32 @@
-package com.raymondchandra.fileioconcepts;
+package com.raymondchandra.fileio.concepts;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class CopyContent {
+public class SearchAndReplaceWords {
 	public static void main(String[] args) throws IOException {
 		
 		FileReader reader = new FileReader("src/main/resources/source.txt");
+		BufferedReader breader = new BufferedReader(reader);
+				
 		FileWriter writer = new FileWriter("src/main/resources/destination.txt");
+		BufferedWriter bwriter = new BufferedWriter(writer);
 		
-		int character = reader.read();
-		while(character != -1) {
+		String line;
+		
+		while ((line = breader.readLine()) != null) {
 			
 			// Write the character into the new file	
-			writer.write(character);
-			
-			// Reading the next character
-			character = reader.read();
+			bwriter.write(line);
+			bwriter.newLine();
 		}
 		
 		System.out.println("File is successfully copied!");
-		
-		writer.close();
-		reader.close();
+				
+		breader.close();
+		bwriter.close();
 	}
 }

@@ -1,4 +1,4 @@
-package com.raymondchandra.fileioconcepts;
+package com.raymondchandra.fileio.concepts;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
