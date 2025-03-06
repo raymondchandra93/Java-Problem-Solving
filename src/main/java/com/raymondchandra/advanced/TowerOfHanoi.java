@@ -16,7 +16,7 @@ You are given a Tower of Hanoi setup with 4 disks.
 3. Generalize the formula to find the minimum number of moves required for n disks.
  */
 
-package com.raymondchandra.intermediate;
+package com.raymondchandra.advanced;
 
 public class TowerOfHanoi {
 	 // Recursive function to solve Tower of Hanoi
