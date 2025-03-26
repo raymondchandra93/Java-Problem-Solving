@@ -11,7 +11,7 @@
  * 
  */
 
-package com.raymondchandra.beginner;
+package com.raymondchandra.arrays.beginners;
 
 public class ReverseString {
 

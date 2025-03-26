@@ -20,6 +20,7 @@ import java.util.HashMap;
 public class LongestConsecutiveSequence {
 
 	// -- More optimized O(n log n) --
+	// Space Complexity: O(1) (since sorting is in-place, and no extra data structures are used).
 //	public static void main(String[] args) {
 //		int[] nums = {100, 4, 200, 1, 3, 2};
 //		Arrays.sort(nums);
@@ -48,6 +49,7 @@ public class LongestConsecutiveSequence {
 //	}
 	
 	// -- More optimized O(n) --
+	// The HashMap approach is faster (O(n)) but uses extra space (O(n)
 	public static int longestConsecutive(int[] nums) {
         if (nums == null || nums.length == 0) return 0;
 
