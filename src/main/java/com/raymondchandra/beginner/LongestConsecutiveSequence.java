@@ -4,10 +4,13 @@
  * The sequence should consist of consecutive integers, but the
  * elements can appear in any order in the array
  * 
- * Input:
- * nums = [100, 4, 200, 1, 3, 2]
+ * Input: arr = {3, 1, 2, 4, 100, 200}
+ * Output: 4
+ * Explanation: The longest consecutive sequence is {1, 2, 3, 4}, so the length is 4.
  * 
- * Output = 4
+ * Input: arr = {10, 5, 12, 3, 55, 30, 4, 11, 2}
+ * Output: 4
+ * Explanation: The longest consecutive sequence is {2, 3, 4, 5}, so the length is 4.
  */
 
 package com.raymondchandra.beginner;
@@ -16,6 +19,8 @@ import java.util.HashMap;
 
 public class LongestConsecutiveSequence {
 
+	// -- More optimized O(n log n) --
+	// Space Complexity: O(1) (since sorting is in-place, and no extra data structures are used).
 //	public static void main(String[] args) {
 //		int[] nums = {100, 4, 200, 1, 3, 2};
 //		Arrays.sort(nums);
@@ -43,6 +48,8 @@ public class LongestConsecutiveSequence {
 //		System.out.println(length);
 //	}
 	
+	// -- More optimized O(n) --
+	// The HashMap approach is faster (O(n)) but uses extra space (O(n)
 	public static int longestConsecutive(int[] nums) {
         if (nums == null || nums.length == 0) return 0;
 
